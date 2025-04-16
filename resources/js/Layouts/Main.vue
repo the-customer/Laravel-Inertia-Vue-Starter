@@ -1,13 +1,15 @@
-<script setup></script>
+<script setup>
+import NavBar from './Components/NavBar.vue';
+import Hero from './Components/Hero.vue';
+import Footer from './Components/Footer.vue';
+</script>
 
 <template>
-    <header class="bg-slate-800 text-white">
-        <nav class="p-6 mx-auto max-w-screen-lg">
-            <Link :href="route('home')">Home</Link>
-        </nav>
-    </header>
-
+    <NavBar/>
+    <Hero/>
     <main class="p-6">
         <slot />
     </main>
+
+    <Footer/>
 </template>
